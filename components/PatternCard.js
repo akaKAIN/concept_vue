@@ -3,7 +3,6 @@ Vue.component('patternCard', {
     id: String,
     name: String,
     image: String,
-    groupsInfo: Object,
     groupId: String
   },
   data(){
@@ -21,8 +20,10 @@ Vue.component('patternCard', {
     '   <div class="pattern-card__name text-center">{{ name }}</div>' +
     '   <div class="pattern-card__groups">' +
     '      <template v-for="button in buttons">' +
-    '         <button class="group__btn" :class="button.class"' +
+    '         <button v-if="groupId != button.group" class="group__btn" :class="button.class"' +
     '                 data-new-group="button.group"' +
+    '                 data-old-group="groupId">{{ button.text }}' +
+    '         </button>' +
     '      </template>' +
     '   </div>' +
     '</div>'
