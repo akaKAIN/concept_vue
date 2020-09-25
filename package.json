@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "axios": "^0.20.0",
+    "eslint-plugin-strict-vue": "^1.0.0",
+    "tsc": "^1.20150623.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.9.0"
+  },
+  "name": "my-patterns",
+  "eslintConfig": {
+    "parserOptions": {
+      "ecmaVersion": 2018,
+      "sourceType": "module"
+    },
+    "plugins": [
+      "strict-vue"
+    ],
+    "rules": {
+      "strict-vue/no-root-store-calls": "error",
+      "strict-vue/no-root-store-assets": "error"
+    }
+  }
+}
