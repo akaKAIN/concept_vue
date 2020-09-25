@@ -1,6 +1,7 @@
 body {
     background-color: lightgray;
 }
+
 .some-wrapper {
     margin: 100px auto;
     width: 821px;
@@ -9,8 +10,16 @@ body {
     background-color: white;
 }
 
-.pattern-card {
+#my-patterns {
+    /*display: flex;*/
+    /*flex-wrap: wrap;*/
+    /*justify-content: space-between;*/
+}
 
+.pattern-card {
+    float: left;
+    margin: 5px;
+    height: 354px;
 }
 
 .pattern-card__image {
