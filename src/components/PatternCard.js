@@ -1,3 +1,5 @@
+import {buttons} from "../mixins/ObjectBtnGroups"
+
 Vue.component('patternCard', {
   props: {
     id: String,
@@ -7,11 +9,7 @@ Vue.component('patternCard', {
   },
   data(){
     return{
-      buttons: [
-        {group: 0, text: 'Хочу сшить', class: 'active'},
-        {group: 1, text: 'Сшито', class: 'passive'},
-        {group: 2, text: 'Архив', class: 'archive'},
-      ]
+      buttons: buttons
     }
   },
   template: '' +

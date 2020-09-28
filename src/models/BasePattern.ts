@@ -1,4 +1,4 @@
-class BasePattern {
+export default class BasePattern {
   id: number;
   name: string;
   user_group: number;

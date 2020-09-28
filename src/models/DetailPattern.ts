@@ -1,4 +1,9 @@
-class DetailPattern extends BasePattern {
+import BasePattern from "./BasePattern";
+import BaseCategory from "./BaseCategory";
+import PatternOption from "./PatternOption";
+import Photo from "./Photo";
+
+export default class DetailPattern extends BasePattern {
   photo: Photo[];
   category: BaseCategory;
   patternUrl: string;

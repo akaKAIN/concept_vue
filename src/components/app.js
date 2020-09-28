@@ -7,6 +7,6 @@ new Vue({
         name: "Active",
         id: 0
       }
-    }
+    };
   }
-})
+});

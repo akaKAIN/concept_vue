@@ -1,4 +1,6 @@
-class PatternOption {
+import PatternFile from "./PatternFile";
+
+export default class PatternOption {
   id: number;
   growth_name: string;
   size_name: string;

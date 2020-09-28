@@ -1,4 +1,8 @@
-class Category extends BaseCategory {
+import BaseCategory from "./BaseCategory";
+import Pattern from "./Pattern";
+import Photo from './Photo'
+
+export default class Category extends BaseCategory {
   patterns: Pattern[];
   patternQuantity: number;
 
@@ -10,11 +14,11 @@ class Category extends BaseCategory {
     this.patternQuantity = patterns.length
   }
 
-  private addQuantity(count: number = 1): void {
+  private addQuantity(count = 1): void {
     this.patternQuantity += count
   }
 
-  private subQuantity(count: number = 1): void {
+  private subQuantity(count = 1): void {
     if (this.patternQuantity - count >= 0) {
       this.patternQuantity -= count
     }

@@ -1,4 +1,6 @@
-class Group {
+import Pattern from "./Pattern";
+
+export default class Group {
     userGroup: number;
     groupName: string;
     patternsCount: number;

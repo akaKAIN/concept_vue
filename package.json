@@ -1,24 +1,30 @@
 {
+  "license": "MIT",
   "dependencies": {
+    "@babel/polyfill": "^7.11.5",
     "axios": "^0.20.0",
     "eslint-plugin-strict-vue": "^1.0.0",
     "tsc": "^1.20150623.0"
   },
-  "devDependencies": {
-    "eslint": "^7.9.0"
+  "scripts": {
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production",
+    "lint": "eslint --ext .ts src/",
+    "fix": "eslint --ext .ts src/ --fix"
   },
-  "name": "my-patterns",
-  "eslintConfig": {
-    "parserOptions": {
-      "ecmaVersion": 2018,
-      "sourceType": "module"
-    },
-    "plugins": [
-      "strict-vue"
-    ],
-    "rules": {
-      "strict-vue/no-root-store-calls": "error",
-      "strict-vue/no-root-store-assets": "error"
-    }
-  }
+  "devDependencies": {
+    "@babel/cli": "^7.11.6",
+    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "^7.11.5",
+    "@typescript-eslint/eslint-plugin": "^4.2.0",
+    "@typescript-eslint/parser": "^4.2.0",
+    "babel-loader": "^8.1.0",
+    "eslint": "^7.10.0",
+    "terser-webpack-plugin": "^4.2.2",
+    "ts-loader": "^8.0.4",
+    "typescript": "^4.0.3",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12"
+  },
+  "name": "my-patterns"
 }

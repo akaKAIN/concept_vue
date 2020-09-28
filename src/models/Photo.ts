@@ -1,4 +1,4 @@
-class Photo {
+export default class Photo {
   id: number;
   image: string;
   myOrder: number;

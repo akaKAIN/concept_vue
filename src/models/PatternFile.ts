@@ -1,4 +1,4 @@
-class PatternFile {
+export default class PatternFile {
   id: number;
   fileName: string;
   file: string;
